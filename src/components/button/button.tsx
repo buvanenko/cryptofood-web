@@ -1,6 +1,5 @@
-import React, { FC, ReactNode, useEffect, useState } from "react";
+import React, { FC, ReactNode } from "react";
 import styles from "./Button.module.css";
-import VkLogo from "../../static/vk_logo.svg";
 
 const Spinner: FC = () => {
   return (
