@@ -58,7 +58,7 @@ export default function App() {
       <main className={styles.main}>
         <div className={styles.wrapper}>
           <div className={styles.container}>
-            <h1>Чето там короче форма глеб смени меня!</h1>
+            <h1>Привет! Заполни форму и получи NFT-пиццу!</h1>
             <div className={styles.content}>
               <ol>
                 <li>
