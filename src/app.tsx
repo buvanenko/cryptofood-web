@@ -1,6 +1,6 @@
 import styles from "./styles/home.module.css";
 import { Web3Button } from "@web3modal/react";
-import { FormEvent, useEffect, useState } from "react";
+import { FormEvent, useState } from "react";
 import { Button } from "./components";
 import { useAccount } from "wagmi";
 import axios from "axios";
