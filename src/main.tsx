@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
+import App from "./app";
 import "./styles/index.css";
 import {
   EthereumClient,
@@ -11,10 +11,9 @@ import { Web3Modal } from "@web3modal/react";
 import { WagmiConfig, configureChains, createClient } from "wagmi";
 import { polygon } from "wagmi/chains";
 import { Toaster } from "react-hot-toast";
+import { RecoilRoot } from "recoil";
 
 const chains = [polygon];
-
-// 1. Get projectID at https://cloud.walletconnect.com
 
 const projectId = import.meta.env.VITE_PROJECT_ID || "";
 
@@ -30,15 +29,11 @@ const ethereumClient = new EthereumClient(wagmiClient, chains);
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <WagmiConfig client={wagmiClient}>
-      <App />
-      <Toaster />
+      <RecoilRoot>
+        <App />
+        <Toaster />
+      </RecoilRoot>
     </WagmiConfig>
-    <Web3Modal
-      projectId={projectId}
-      ethereumClient={ethereumClient}
-      themeVariables={{
-        "--w3m-logo-image-url": "/logo.svg",
-      }}
-    />
+    <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />
   </React.StrictMode>
 );

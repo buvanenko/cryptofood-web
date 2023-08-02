@@ -1,5 +1,5 @@
 import React, { FC, ReactNode } from "react";
-import styles from "./Button.module.css";
+import styles from "./button.module.css";
 
 const Spinner: FC = () => {
   return (

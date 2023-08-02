@@ -20,9 +20,9 @@ body {
     --shadow-lg: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     --rounded-sm: 0.5rem;
     --rounded-md: 1.5rem;
-    --w3m-accent-color: #b80000 !important;
+    /*--w3m-accent-color: #b80000 !important;*/
     --w3m-font-family: var(--font-base) !important;
-    --w3m-background-color: #b80000 !important;
+    /*--w3m-background-color: #b80000 !important;*/
     --w3m-logo-image-url: url("/logo.svg") !important;
 }
 
@@ -48,7 +48,7 @@ body {
     font-family: var(--font-base);
     background-color: var(--color-bg);
     color: var(--color-grey-100);
-    background-image: url("/background.png");
+    background-color: #222222;
     background-repeat: no-repeat;
     background-size: cover;
 }

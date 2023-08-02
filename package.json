@@ -2,6 +2,7 @@
 	"name": "react-starter-template",
 	"private": true,
 	"version": "0.0.1",
+	"license": "MIT",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
@@ -9,12 +10,17 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
+		"@radix-ui/colors": "^1.0.0",
+		"@radix-ui/react-dialog": "^1.0.4",
+		"@react-spring/web": "^9.7.3",
 		"@web3modal/ethereum": "^2.2.2",
 		"@web3modal/react": "^2.2.2",
+		"cubic-bezier": "^0.1.2",
 		"ethers": "^5",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-hot-toast": "^2.4.1",
+		"recoil": "^0.7.7",
 		"wagmi": "^0.12.9"
 	},
 	"devDependencies": {
