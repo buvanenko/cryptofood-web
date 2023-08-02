@@ -17,7 +17,7 @@ export default function App() {
 
   const handleClick = () => {
     setLoading(true);
-    let getLink = axios.get("http://127.0.0.1:5000/food", {
+    let getLink = axios.get("https://food.sovietgirls.su/food", {
       params: {
         address: form.address,
         name: form.name,
